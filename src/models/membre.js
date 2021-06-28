@@ -1,13 +1,11 @@
-import mongoose from "mongoose";
-import bcrypt from "bcrypt";
+import mongoose, { Schema } from "mongoose";
 const Schema = mongoose.Schema;
 
-const userSchema = new Schema({
-    idmembre: {type: Number},
+const MembreSchema = new Schema({
     username: { type: String, min: 4, max: 15 },
-    password: { type: String, required: true, max: 1024, min: 6}
+    password: { type: String, required: true, max: 1024, min: 6 },
 });
 
-const membre = mongoose.model('membre', userSchema);
+const Membre = mongoose.model("membre", MembreSchema);
 
-export { membre };
+export { Membre };

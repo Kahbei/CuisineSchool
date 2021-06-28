@@ -5,8 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "backpack --trace-warnings",
-    "start": "nodemon main.js"
+    "start": "backpack --trace-warnings"
   },
   "repository": {
     "type": "git",
