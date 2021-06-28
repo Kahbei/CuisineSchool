@@ -1,5 +1,4 @@
-import mongoose from "mongoose";
-import bcrypt from "bcrypt";
+import mongoose, { Schema } from "mongoose";
 const Schema = mongoose.Schema;
 
 const CoursSchema = new Schema({
