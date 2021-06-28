@@ -2,12 +2,17 @@
 
 <h1 class="text-center">COURS</h1>
 
-<%  cours.forEach((c) => { %>
-    <div class="text-center">
-        <H2>TITRE : <%= c.titre %></H2>
-    
-        <p><%= c.recette %></p>
+<div class="d-flex justify-content-around flex-wrap m-4">
+    <%  cours.forEach((c) => { %>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title"><%= c.titre %></h5>
+            <p class="card-text"><%= c.recette %></p>
+            <a href="/cours/<%= c._id %>" class="btn btn-primary">Allez à ce cours</a>
+        </div>
     </div>
-<% }) %>
+    <% }) %>
+</div>
+
 
 <%- include('layout/footer') %>

@@ -17,7 +17,7 @@ coursRouter.get("/", async (req, res, next) => {
 coursRouter.get("/cours/:id", async (req, res, next) => {
     try {
         let coursOne = await Cours.findOne({ _id: req.params.id });
-        res.render("cours", { cours: coursOne });
+        res.render("merci", { cours: coursOne });
     } catch (err) {
         next(err);
     }
