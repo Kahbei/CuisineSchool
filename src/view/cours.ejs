@@ -2,10 +2,12 @@
 
 <h1 class="text-center">COURS</h1>
 
-<div class="text-center">
-    <H2>TITRE : </H2>
-
-    <p>Recette</p>
-</div>
+<%  cours.forEach((c) => { %>
+    <div class="text-center">
+        <H2>TITRE : <%= c.titre %></H2>
+    
+        <p><%= c.recette %></p>
+    </div>
+<% }) %>
 
 <%- include('layout/footer') %>
