@@ -24,5 +24,7 @@ app.use(express.json());
 
 app.get("/", (req, res) => res.render("index"));
 app.get("/membre", (req, res) => res.render("membre"));
+app.get("/merci", (req, res) => res.render("merci"));
+app.get("/404", (req, res) => res.render("404"));
 
 app.listen(PORT, () => console.log(`Server listening port ${PORT}`));
