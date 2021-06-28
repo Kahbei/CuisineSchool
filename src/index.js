@@ -2,6 +2,11 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 
+/** ROUTE */
+import coursRouter from "./routes/cours";
+import membreRouter from "./routes/membre";
+/** *** **/
+
 dotenv.config();
 
 const app = express();
@@ -22,6 +27,7 @@ app.set("views", "./src/view");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.get("/", (req, res) => res.render("index"));
+app.use("/cours", coursRouter);
+app.use("/membre", membreRouter);
 
 app.listen(PORT, () => console.log(`Server listening port ${PORT}`));
