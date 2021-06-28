@@ -27,7 +27,7 @@ app.set("views", "./src/view");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use("/cours", coursRouter);
+app.use("/", coursRouter);
 app.use("/membre", membreRouter);
 
 app.listen(PORT, () => console.log(`Server listening port ${PORT}`));
