@@ -1,0 +1,40 @@
+<%- include('layout/header') %>
+
+    <h1 class="text-center">MEMBRE</h1>
+
+    <div id="div_form" class="text-center">
+        <p>Connexion : </p>
+        <form>
+            <div class="mb-3">
+                <label for="recipient-name" class="col-form-label col-md-1">nom :</label>
+                <input type="text" class="col col-lg-2" id="LogInUsername">
+            </div>
+            <div class="mb-3">
+                <label for="recipient-name" class="col-form-label col-md-1">mot de passe :</label>
+                <input type="text" class="col col-lg-2" id="LogInPassword">
+            </div>
+        </form>
+    </div>
+
+    <div id="bar" class="border-bottom border-top mt-4 mb-4"></div>
+
+    <div id="div_form" class="text-center">
+        <p>Inscription : </p>
+        <form>
+            <div class="mb-3">
+                <label for="recipient-name" class="col-form-label col-md-1">nom :</label>
+                <input type="text" class="col col-lg-2" id="SignInUsername">
+            </div>
+            <div class="mb-3">
+                <label for="recipient-name" class="col-form-label col-md-1">mot de passe :</label>
+                <input type="text" class="col col-lg-2" id="SignInPassword">
+            </div>
+            <div class="mb-3">
+                <label for="recipient-name" class="col-form-label col-md-1">répéter mot de passe :</label>
+                <input type="text" class="col col-lg-2" id="SignInSecondPassword">
+            </div>
+        </form>
+    </div>
+
+
+    <%- include('layout/footer') %>

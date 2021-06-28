@@ -11,5 +11,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get("/", (req, res) => res.render("index"));
+app.get("/membre", (req, res) => res.render("membre"));
 
 app.listen(PORT, () => console.log(`Server listening port ${PORT}`));

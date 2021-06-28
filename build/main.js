@@ -109,6 +109,7 @@ app.use(express.urlencoded({
 }));
 app.use(express.json());
 app.get("/", (req, res) => res.render("index"));
+app.get("/membre", (req, res) => res.render("membre"));
 app.listen(PORT, () => console.log(`Server listening port ${PORT}`));
 
 /***/ }),
@@ -120,7 +121,7 @@ app.listen(PORT, () => console.log(`Server listening port ${PORT}`));
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Gary\Documents\Informatique\Project\Web\site\ESTIAM\CuisineSchool\src/index.js */"./src/index.js");
+module.exports = __webpack_require__(/*! C:\Users\rabaj\CuisineSchool\src/index.js */"./src/index.js");
 
 
 /***/ }),
