@@ -1,5 +1,5 @@
 {
     "presets": [
-        "backpack-core/label"
+        "backpack-core/babel"
     ],
 }
